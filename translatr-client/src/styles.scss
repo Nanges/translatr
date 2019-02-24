@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+// Required
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Our variables
+@import 'sass/bootstrap/variables';
+
+// Optional
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/utilities';
+
+// prime ng theme
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/rhea/theme.css';
+@import '~primeng/resources/primeng.min.css';
+
+/**** HELPER CLASS ****/
+@import 'sass/helpers.scss';

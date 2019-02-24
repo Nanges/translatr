@@ -1,0 +1,39 @@
+<form [formGroup]="form" class="ui-g ui-fluid py-3 px-1" (ngSubmit)="submit()">
+    <div class="ui-g-12 mb-75">
+        <span class="ui-float-label">
+            <input
+                id="username"
+                type="text"
+                pInputText
+                formControlName="username"
+            />
+            <label for="username">Username</label>
+        </span>
+    </div>
+    <div class="ui-g-12 mb-25">
+        <div class="ui-inputgroup">
+            <span class="ui-float-label w-100">
+                <input
+                    type="password"
+                    pPassword
+                    [feedback]="false"
+                    [showPassword]="!submitting && passwordShown"
+                    id="password"
+                    formControlName="password"
+                />
+                <label for="password">Password</label>
+            </span>
+            <button
+                pButton
+                type="button"
+                [icon]="passwordShown ? 'pi pi-eye-slash' : 'pi pi-eye'"
+                [disabled]="submitting"
+                (click)="togglePassword()"
+                tabindex="-1"
+            ></button>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4 ui-md-offset-8">
+        <button pButton label="Login" [disabled]="form.invalid"></button>
+    </div>
+</form>

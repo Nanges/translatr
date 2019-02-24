@@ -1,0 +1,12 @@
+.login-pane {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 10px;
+
+    @media screen and (min-width: 40.063rem) {
+        width: 500px;
+    }
+}
