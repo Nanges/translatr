@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { SecurityService, Credentials } from '../../services/security.service';
 
 @Component({
     selector: 'app-login-form',
@@ -13,7 +14,7 @@ export class LoginFormComponent implements OnInit {
     @Output()
     loginSuccess = new EventEmitter();
 
-    constructor(private fb: FormBuilder) {}
+    constructor(private fb: FormBuilder, private security: SecurityService) {}
 
     get username() {
         return this.form.get('username');
@@ -33,9 +34,17 @@ export class LoginFormComponent implements OnInit {
     submit() {
         this.form.disable();
         this.submitting = true;
-
-        // console.log(this.form.getRawValue());
-        this.loginSuccess.emit(true);
+        this.security
+            .authenticate(this.form.getRawValue() as Credentials)
+            .subscribe(
+                () => {
+                    this.loginSuccess.emit(true);
+                },
+                () => {
+                    this.submitting = false;
+                    this.form.enable();
+                }
+            );
     }
 
     togglePassword() {

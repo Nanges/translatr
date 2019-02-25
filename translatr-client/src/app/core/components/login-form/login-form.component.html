@@ -1,4 +1,5 @@
-<form [formGroup]="form" class="ui-g ui-fluid py-3 px-1" (ngSubmit)="submit()">
+<p-progressBar *ngIf="submitting" mode="indeterminate" [style]="{'height': '3px'}"></p-progressBar>
+<form [formGroup]="form" class="ui-g ui-fluid pb-100 pt-200 px-100" (ngSubmit)="submit()">
     <div class="ui-g-12 mb-75">
         <span class="ui-float-label">
             <input
@@ -34,6 +35,6 @@
         </div>
     </div>
     <div class="ui-g-12 ui-md-4 ui-md-offset-8">
-        <button pButton label="Login" [disabled]="form.invalid"></button>
+        <button pButton label="Login" [disabled]="form.invalid || submitting"></button>
     </div>
 </form>

@@ -15,6 +15,6 @@ export class DashboardResolver implements Resolve<boolean> {
         route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): Observable<boolean> {
-        return of(true).pipe(delay(300));
+        return of(true).pipe(delay(3000));
     }
 }

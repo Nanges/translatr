@@ -6,14 +6,18 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
+import { SecurityService } from './services/security.service';
+import { LoginOverlayComponent } from './components/login-overlay/login-overlay.component';
 
 @NgModule({
+    imports: [CommonModule, ReactiveFormsModule, SharedModule],
     declarations: [
         LoginFormComponent,
         LoginPageComponent,
         LoadingScreenComponent,
+        LoginOverlayComponent,
     ],
-    imports: [CommonModule, ReactiveFormsModule, SharedModule],
-    exports: [LoadingScreenComponent],
+    providers: [SecurityService],
+    exports: [LoadingScreenComponent, LoginOverlayComponent],
 })
 export class CoreModule {}

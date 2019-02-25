@@ -6,6 +6,8 @@ import { CardModule } from 'primeng/card';
 import { EditorModule } from 'primeng/editor';
 import { TreeModule } from 'primeng/tree';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
     declarations: [],
@@ -17,6 +19,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
         EditorModule,
         TreeModule,
         ProgressSpinnerModule,
+        ProgressBarModule,
+        DialogModule,
     ],
     exports: [
         ButtonModule,
@@ -26,6 +30,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
         EditorModule,
         TreeModule,
         ProgressSpinnerModule,
+        ProgressBarModule,
+        DialogModule,
     ],
 })
 export class PrimeNgModule {}
