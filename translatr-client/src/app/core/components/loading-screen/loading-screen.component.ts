@@ -35,21 +35,17 @@ export class LoadingScreenComponent implements OnInit {
                 ),
                 map(e => e instanceof NavigationStart),
                 debounce(() => timer(400)), // average duration of navigation
-                tap(show => {
-                    if (show) {
-                        this.hidden = false;
-                    } else {
-                        this.fadeIn = false;
-                    }
-                }),
+                tap(show => this.sequence(show)),
                 delayWhen(show => timer(show ? 0 : 400))
             )
-            .subscribe(show => {
-                if (show) {
-                    this.fadeIn = true;
-                } else {
-                    this.hidden = true;
-                }
-            });
+            .subscribe(show => this.sequence(show, 1));
+    }
+
+    private sequence(r: boolean, i = 0) {
+        const sequence = r
+            ? [() => (this.hidden = false), () => (this.fadeIn = true)]
+            : [() => (this.fadeIn = false), () => (this.hidden = true)];
+
+        sequence[i]();
     }
 }
