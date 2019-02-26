@@ -26,7 +26,14 @@ export class DashboardPageComponent implements OnInit {
         },
     ];
 
+    showSidebar = false;
+    text1: 'foo';
+
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+        setTimeout(() => {
+            this.showSidebar = true;
+        }, 1000);
+    }
 }

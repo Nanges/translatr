@@ -3,9 +3,10 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { CardModule } from 'primeng/card';
-import { EditorModule } from 'primeng/editor';
 import { TreeModule } from 'primeng/tree';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { TreeDragDropService } from 'primeng/components/common/treedragdropservice';
+import { EditorModule } from 'primeng/editor';
 
 @NgModule({
     declarations: [],
@@ -14,18 +15,19 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
         InputTextModule,
         PasswordModule,
         CardModule,
-        EditorModule,
         TreeModule,
         ProgressSpinnerModule,
+        EditorModule,
     ],
     exports: [
         ButtonModule,
         InputTextModule,
         PasswordModule,
         CardModule,
-        EditorModule,
         TreeModule,
         ProgressSpinnerModule,
+        EditorModule,
     ],
+    providers: [TreeDragDropService],
 })
 export class PrimeNgModule {}

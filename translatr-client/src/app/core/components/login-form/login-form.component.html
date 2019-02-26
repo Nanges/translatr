@@ -34,6 +34,10 @@
         </div>
     </div>
     <div class="ui-g-12 ui-md-4 ui-md-offset-8">
-        <button pButton label="Login" [disabled]="form.invalid"></button>
+        <button
+            pButton
+            label="Login"
+            [disabled]="form.invalid || submitting"
+        ></button>
     </div>
 </form>

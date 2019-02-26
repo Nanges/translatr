@@ -1,0 +1,25 @@
+.side-bar {
+    position: fixed;
+    left: -300px;
+    top: 0px; // 70px;
+    width: 300px;
+    height: 100%; // calc(100% - 70px);
+    background-color: #eee;
+    box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    transition: left ease-in 0.3s;
+}
+
+.main-container {
+    margin-left: 0px;
+    transition: margin-left ease-in 0.3s;
+}
+
+.has-sidebar {
+    .side-bar {
+        left: 0;
+    }
+
+    .main-container {
+        margin-left: 300px;
+    }
+}

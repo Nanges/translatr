@@ -1,1 +1,12 @@
-<p-tree [value]="data" draggableNodes="true" droppableNodes="true"></p-tree>
+<div class="has-sidebar">
+    <div class="side-bar"></div>
+    <div class="main-container px-100">
+        <div class="mb-100">
+            <p-editor
+                [(ngModel)]="text1"
+                [style]="{ height: '320px' }"
+            ></p-editor>
+        </div>
+        <editor cloudChannel="stable" [(ngModel)]="text1"></editor>
+    </div>
+</div>
