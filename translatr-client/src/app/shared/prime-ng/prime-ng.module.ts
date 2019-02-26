@@ -7,6 +7,8 @@ import { TreeModule } from 'primeng/tree';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { TreeDragDropService } from 'primeng/components/common/treedragdropservice';
 import { EditorModule } from 'primeng/editor';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
     declarations: [],
@@ -18,6 +20,8 @@ import { EditorModule } from 'primeng/editor';
         TreeModule,
         ProgressSpinnerModule,
         EditorModule,
+        ProgressBarModule,
+        DialogModule,
     ],
     exports: [
         ButtonModule,
@@ -27,6 +31,8 @@ import { EditorModule } from 'primeng/editor';
         TreeModule,
         ProgressSpinnerModule,
         EditorModule,
+        ProgressBarModule,
+        DialogModule,
     ],
     providers: [TreeDragDropService],
 })
