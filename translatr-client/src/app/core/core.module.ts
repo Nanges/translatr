@@ -8,9 +8,15 @@ import { SharedModule } from '../shared/shared.module';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 import { SecurityService } from './services/security.service';
 import { LoginOverlayComponent } from './components/login-overlay/login-overlay.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-    imports: [CommonModule, ReactiveFormsModule, SharedModule],
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        SharedModule,
+        HttpClientModule,
+    ],
     declarations: [
         LoginFormComponent,
         LoginPageComponent,
