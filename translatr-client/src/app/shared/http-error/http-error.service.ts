@@ -5,27 +5,15 @@ import { Subject, Observable } from 'rxjs';
 
 @Injectable()
 export class HttpErrorService {
-    private _enabled: boolean;
-
     private httpError$ = new Subject<HttpErrorContext>();
 
-    constructor(private errorFilter: HttpErrorFilter) {}
+    constructor() {}
 
     intercept(e: HttpErrorResponse, requestState: any) {
-        if (this.errorFilter.filter(e, this._enabled)) {
-            this.httpError$.next({
-                httpErrorResponse: e,
-                requestState,
-            });
-        }
-    }
-
-    enable() {
-        this._enabled = true;
-    }
-
-    disable() {
-        this._enabled = false;
+        this.httpError$.next({
+            httpErrorResponse: e,
+            requestState,
+        });
     }
 
     get error$(): Observable<HttpErrorContext> {

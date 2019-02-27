@@ -16,7 +16,7 @@ export class HttpErrorModalComponent implements OnInit {
     ngOnInit() {
         this.httpError.error$.subscribe(e => {
             if (this.detailsFilter.showDetails()) {
-                alert('ok');
+                console.log(e);
             }
         });
     }

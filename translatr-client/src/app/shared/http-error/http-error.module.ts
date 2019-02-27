@@ -14,6 +14,8 @@ import {
 } from './lib/http-error-details-filter';
 import { HttpErrorService } from './http-error.service';
 import { HttpErrorModalComponent } from './http-error-modal/http-error-modal.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpErrorInterceptor } from './http-error-interceptor';
 
 export interface HttpErrorConfig {
     httpErrorFilter?: Provider;
@@ -43,6 +45,11 @@ export class HttpErrorModule {
                 config.httpRequestStateHandler || {
                     provide: HttpRequestStateHandler,
                     useClass: DefaultHttpRequestStateHandler,
+                },
+                {
+                    provide: HTTP_INTERCEPTORS,
+                    useClass: HttpErrorInterceptor,
+                    multi: true,
                 },
             ],
         };

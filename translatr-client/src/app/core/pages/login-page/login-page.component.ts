@@ -16,11 +16,11 @@ export class LoginPageComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         this.title.setTitle('Login to Translatr');
-        this.httpError.disable();
+        // this.httpError.disable();
     }
 
     ngOnDestroy(): void {
-        this.httpError.enable();
+        // this.httpError.enable();
     }
 
     navigateToDashboard() {
