@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpErrorModule } from './shared/http-error/http-error.module';
+import { LoaderScreenModule } from './shared/loader-screen/loader-screen.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { HttpErrorModule } from './shared/http-error/http-error.module';
         // translatr concern
         CoreModule,
         HttpErrorModule.forRoot(),
+        LoaderScreenModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

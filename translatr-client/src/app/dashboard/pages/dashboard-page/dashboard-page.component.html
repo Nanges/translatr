@@ -1,12 +1,18 @@
 <div class="has-sidebar">
-    <div class="side-bar"></div>
+    <div class="side-bar">
+        <p-tree
+            [value]="data"
+            draggableNodes="true"
+            droppableNodes="true"
+        ></p-tree>
+    </div>
     <div class="main-container px-100">
         <div class="mb-100">
             <p-editor
+                class="translatr-editor"
                 [(ngModel)]="text1"
                 [style]="{ height: '320px' }"
             ></p-editor>
         </div>
     </div>
 </div>
-<p-tree [value]="data" draggableNodes="true" droppableNodes="true"></p-tree>

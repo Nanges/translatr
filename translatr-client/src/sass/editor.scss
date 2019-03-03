@@ -1,0 +1,243 @@
+$editor-hover: #637e8c;
+
+body .translatr-editor .ui-editor-container .ui-editor-toolbar {
+    border: 1px solid #c8c8c8;
+    background-color: #f4f4f4;
+}
+body .translatr-editor .ui-editor-container .ui-editor-content {
+    border: 1px solid #c8c8c8;
+}
+body .translatr-editor .ui-editor-container .ui-editor-content .ql-editor {
+    background-color: #ffffff;
+    color: #333333;
+}
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-picker.ql-expanded
+    .ql-picker-label {
+    color: #333333;
+}
+body .translatr-editor .ui-editor-container .ql-stroke {
+    stroke: #333333;
+}
+body .translatr-editor .ui-editor-container .ql-picker-label {
+    color: #333333;
+}
+body .translatr-editor .ui-editor-container .ql-snow.ql-toolbar button:hover,
+body .translatr-editor .ui-editor-container .ql-snow .ql-toolbar button:hover,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    button.ql-active,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    button.ql-active,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label:hover,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label:hover,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label.ql-active,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label.ql-active,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item:hover,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item:hover,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item.ql-selected,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item.ql-selected {
+    color: $editor-hover;
+}
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    button:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    button:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    button.ql-active
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    button.ql-active
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label.ql-active
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label.ql-active
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item:hover
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item.ql-selected
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item.ql-selected
+    .ql-stroke,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    button:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    button:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    button.ql-active
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    button.ql-active
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-label.ql-active
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-label.ql-active
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item:hover
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow.ql-toolbar
+    .ql-picker-item.ql-selected
+    .ql-stroke-miter,
+body
+    .translatr-editor
+    .ui-editor-container
+    .ql-snow
+    .ql-toolbar
+    .ql-picker-item.ql-selected
+    .ql-stroke-miter {
+    stroke: $editor-hover;
+}

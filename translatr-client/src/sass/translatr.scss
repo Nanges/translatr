@@ -1,7 +1,3 @@
-.ui-card-body{
-    padding:0px;
-}
-
 .app-login-pane {
     position: absolute;
     left: 50%;
@@ -12,6 +8,10 @@
 
     @media screen and (min-width: 40.063rem) {
         width: 500px;
+    }
+
+    .ui-card-body {
+        padding: 0px;
     }
 }
 

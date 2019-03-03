@@ -4,7 +4,6 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { CardModule } from 'primeng/card';
 import { TreeModule } from 'primeng/tree';
-import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { TreeDragDropService } from 'primeng/components/common/treedragdropservice';
 import { EditorModule } from 'primeng/editor';
 import { ProgressBarModule } from 'primeng/progressbar';
@@ -18,7 +17,6 @@ import { DialogModule } from 'primeng/dialog';
         PasswordModule,
         CardModule,
         TreeModule,
-        ProgressSpinnerModule,
         EditorModule,
         ProgressBarModule,
         DialogModule,
@@ -29,7 +27,6 @@ import { DialogModule } from 'primeng/dialog';
         PasswordModule,
         CardModule,
         TreeModule,
-        ProgressSpinnerModule,
         EditorModule,
         ProgressBarModule,
         DialogModule,
