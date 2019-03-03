@@ -1,0 +1,16 @@
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.deps.json
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.runtimeconfig.json
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.runtimeconfig.dev.json
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.dll
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.pdb
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.csprojAssemblyReference.cache
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.csproj.CoreCompileInputs.cache
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.RazorAssemblyInfo.cache
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.RazorAssemblyInfo.cs
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.AssemblyInfoInputs.cache
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.AssemblyInfo.cs
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.RazorTargetAssemblyInfo.cache
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.dll
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.pdb
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\bin\Debug\netcoreapp2.1\TranslatrApi.xml
+E:\translatr\translatr-api\TranslatrApi\TranslatrApi\obj\Debug\netcoreapp2.1\TranslatrApi.xml
